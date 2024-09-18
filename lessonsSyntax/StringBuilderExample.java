@@ -1,4 +1,4 @@
-package lessons;
+package lessonsSyntax;
 
 // Класс для примеров. StringBuilder
 public class StringBuilderExample {

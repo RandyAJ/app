@@ -1,4 +1,4 @@
-package lessons;
+package lessonsSyntax;
 
 import java.util.Arrays;
 
@@ -21,30 +21,40 @@ public class Arrayzz {
     static int[][] tablEmpty = new int[2][3];
 
     public static void main(String[] args) {
-        System.out.println("print array of numbers");
-        System.out.println(arr); // [[I@...
-        printArray(arr);         // [17, 25, 37]
-        System.out.println(arrEmpty); // [[I@...
-        printArray(arrEmpty);         // [0, 0, 0, 0, 0]
-        System.out.println("");
-        System.out.println("Распечатаем массивы строк");
-        System.out.println(arrStringEmpty); // [[I@...
-        printArrayStr(arrString);      // [null, null]
-        System.out.println(arrString); // [[I@...
-        printArrayStr(arrString);      // [Я, Они, Мы]
-        System.out.println("");
-        System.out.println("Распечатаем массивы с булеан значениями");
-        System.out.println(arrBool); // [Z@7e9e5f8a
-        printArrayBool(arrBool);     // [true, false, true]
-        System.out.println(arrBoolEmpty); // [Z@8bcc55f
-        printArrayBool(arrBoolEmpty);     // [false, false, false, false, false]
+        // System.out.println("print array of numbers");
+        // System.out.println(arr); // [[I@...
+        // printArray(arr);         // [17, 25, 37]
+        // System.out.println(arrEmpty); // [[I@...
+        // printArray(arrEmpty);         // [0, 0, 0, 0, 0]
+        // System.out.println("");
+        // System.out.println("Распечатаем массивы строк");
+        // System.out.println(arrStringEmpty); // [[I@...
+        // printArrayStr(arrString);      // [null, null]
+        // System.out.println(arrString); // [[I@...
+        // printArrayStr(arrString);      // [Я, Они, Мы]
+        // System.out.println("");
+        // System.out.println("Распечатаем массивы с булеан значениями");
+        // System.out.println(arrBool); // [Z@7e9e5f8a
+        // printArrayBool(arrBool);     // [true, false, true]
+        // System.out.println(arrBoolEmpty); // [Z@8bcc55f
+        // printArrayBool(arrBoolEmpty);     // [false, false, false, false, false]
 
-        System.out.println("");    
-        System.out.println("И двумерные массивы чисел");
-        System.out.println(table); // [[I@...
-        print2DArray(table);       // [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-        System.out.println(tablEmpty); // [[I@...
-        print2DArray(tablEmpty);       // [[0, 0, 0], [0, 0, 0]]
+        // System.out.println("");    
+        // System.out.println("И двумерные массивы чисел");
+        // System.out.println(table); // [[I@...
+        // print2DArray(table);       // [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+        // System.out.println(tablEmpty); // [[I@...
+        // print2DArray(tablEmpty);       // [[0, 0, 0], [0, 0, 0]]
+
+        // ..
+        // Копия массива с доп длинной
+        int[] copyArr = Arrays.copyOf(arr, arr.length * 2);
+        System.out.println(copyArr); // [I@7ad041f3
+        printArray(copyArr);         // [17, 25, 37, 0, 0, 0]
+        // сортирую
+        Arrays.sort(copyArr);
+        printArray(copyArr);         // [17, 25, 37, 0, 0, 0]
+
     }
 
     // Метод, респечатывающий массив цифр и чисел

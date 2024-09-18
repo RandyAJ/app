@@ -1,4 +1,4 @@
-package lessons;
+package lessonsSyntax;
 
 // Класс для примеров. Циклы
 public class Cycles {
