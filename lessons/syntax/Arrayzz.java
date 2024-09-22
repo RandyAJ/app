@@ -1,4 +1,4 @@
-package lessonsSyntax;
+package lessons.syntax;
 
 import java.util.Arrays;
 

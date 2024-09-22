@@ -1,4 +1,4 @@
-package lessonsSyntax;
+package lessons.syntax;
 
 import java.io.Console;
 import java.util.Scanner;
