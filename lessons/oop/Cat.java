@@ -4,23 +4,25 @@ package lessons.oop;
 public class Cat {
     
     String name;
-    short age;
+    int age;
 
-    // статическая переменная принадлежит классу, а не экзмелярам объекта
+    // // статическая переменная принадлежит классу, а не экзмелярам объекта
     static int count = 0;
     public static void main(String[] args) {
-        Cat freeman = new Cat();
-        freeman.name = "Morgan";
-        freeman.age = 4;
+        Cat freeman = new Cat("Morgan", 20);
         count++;
 
-        Cat sydney = new Cat();
-        sydney.name = "Sweeney";
-        sydney.age = 20;
+        Cat sydney = new Cat("Sweeney", 4);
         count++;
 
         System.out.println("Создано кошачьих: " + Cat.count + ", по именам: " + freeman.name + ", " + sydney.name);
         sydney.sayMeow();
+    }
+
+    // метод-конструктор
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public void sayMeow(){
