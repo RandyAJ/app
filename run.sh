@@ -1,11 +1,18 @@
 # P.S. 'chmod +x FILENAME.sh' выполнить в терминале для предоставления доступа до новых баш-скриптов
 
 # Баш-скрипт для компиляции и выполнения джава-класса
-# @param - имя класса в указанных директориях
-if [ -n "$1" ]
+# @1 - имя пэкеджа
+# @2 - имя класса в указанных директориях
+
+package=$1
+className=$2
+
+if [ -z $2 ]
 then
-    javac lessons/syntax/$1.java
-    java lessons.syntax.$1
-else
-    echo "Enter class name."
+    echo "Example for launching: 'sh run.sh package className'"
+    exit
 fi
+
+javac lessons/$package/$className.java
+java lessons.$package.$className
+exit
