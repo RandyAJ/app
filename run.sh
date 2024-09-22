@@ -4,8 +4,8 @@
 # @param - имя класса в указанных директориях
 if [ -n "$1" ]
 then
-    javac lessons/$1.java
-    java lessons.$1
+    javac lessonsSyntax/$1.java
+    java lessonsSyntax.$1
 else
     echo "Enter class name."
 fi
