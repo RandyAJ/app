@@ -9,6 +9,7 @@ package lessons.oop.polymorphism;
 // без информации о внутреннем устройстве объекта, называется полиморфизмом
 public class User {
     Long myNubmer;
+
     public static void main(String[] args) {
         User me = new User();
         me.myNubmer = 89999174217L;
