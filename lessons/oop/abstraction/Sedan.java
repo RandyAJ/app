@@ -9,6 +9,7 @@ public class Sedan extends Car {
         Sedan bmw = new Sedan("BMW", 320, "dark blue");
         bmw.cheapVersion = "Stage 1";
 
+        System.out.println("Модель седана - " + bmw.getModel());
         bmw.gas();
         bmw.turnSignal();
     }
